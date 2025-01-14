@@ -11,7 +11,7 @@ Welcome to the **CTF_DESIGN** repository! This repository is a collection of cha
 ### 1. **Bruteforce**
 - **Purpose**: Contains a script to brute force a password-protected PDF.
 - **Contents**:
-  - `bruteforce_pdf.py`: A Python script that takes a PDF file as input and attempts to brute force its password using a dictionary attack.
+  - `pdf_bf.py`: A Python script that takes a PDF file as input and attempts to brute force its password using a dictionary attack.
   - `requirements.txt`: Lists the necessary Python libraries required to run the script.
 - **Usage**: Run the script via command-line arguments. Ensure you install the required libraries using `pip install -r requirements.txt`.
 
@@ -24,27 +24,25 @@ This directory is divided into three subfolders, each focusing on different fore
   - `hide_bit.py`: Hides data within an image at the bit level.
   - `reveal_bit.py`: Extracts hidden data from an image.
   - Sample files: Images with hidden data for testing.
-  - `requirements.txt`: Lists the necessary libraries to run the scripts.
 - **Usage**: Execute the scripts via command-line arguments. Install dependencies beforehand.
 
 #### **b. Exif_hide**
 - **Purpose**: Contains scripts to hide and reveal data in the EXIF metadata of images.
 - **Contents**:
   - `hide_exif.py`: Embeds data into the EXIF metadata of an image.
-  - `reveal_exif.py`: Retrieves the embedded data from EXIF metadata.
+  - `exif_retrive.py`: Retrieves the embedded data from EXIF metadata.
   - Sample files: Images with modified EXIF metadata.
-  - `requirements.txt`: Lists the required libraries.
 - **Usage**: Use command-line arguments to run the scripts. Install dependencies before use.
 
 #### **c. Txt_hide**
 - **Purpose**: Contains scripts to append and retrieve text data from image files.
 - **Contents**:
-  - `append_text.py`: Appends a secret key or data to an image file as text.
+  - `hide_txt.py`: Appends a secret key or data to an image file as text.
   - `retrieve_text.py`: Extracts the appended text from an image file.
   - Sample files: Images with appended text for testing.
-  - `requirements.txt`: Includes necessary libraries.
 - **Usage**: Run the scripts via command-line arguments after installing dependencies.
-
+  
+- `requirements.txt`: Lists the necessary libraries to run the scripts.
 ---
 
 ## Themes
