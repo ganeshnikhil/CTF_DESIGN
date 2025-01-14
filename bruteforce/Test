@@ -1,0 +1,3 @@
+<script>start("/Users/Shared/Code/brute_force_pdf/Test/");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("test.pdf","test.pdf",0,13474,"13.2 kB",1731144243,"09/11/2024, 14:54:03");</script>
