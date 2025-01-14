@@ -1,7 +1,5 @@
 # CTF_DESIGN
 
-# CTF_DESIGN
-
 Welcome to the **CTF_DESIGN** repository! This repository is a collection of challenges designed for Capture the Flag (CTF) competitions. These challenges are themed around the TV series *Mr. Robot* and currently focus on brute force and forensic techniques. Below is a detailed description of the structure and content of this repository.
 
 ---
