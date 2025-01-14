@@ -1,0 +1,5 @@
+<script>start("/Users/Shared/Code/ctf_desgin/exif_hide/");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("exif_hide.jpg","exif_hide.jpg",0,83778,"81.8 kB",1736618126,"11/01/2025, 23:25:26");</script>
+<script>addRow("exif_hide.py","exif_hide.py",0,2549,"2.5 kB",1736796406,"14/01/2025, 00:56:46");</script>
+<script>addRow("exif_retrive.py","exif_retrive.py",0,994,"994 B",1736789142,"13/01/2025, 22:55:42");</script>

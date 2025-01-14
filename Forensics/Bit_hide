@@ -1,0 +1,5 @@
+<script>start("/Users/Shared/Code/ctf_desgin/Bit_hide/");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("bit_hide.png","bit_hide.png",0,764909,"747 kB",1736618136,"11/01/2025, 23:25:36");</script>
+<script>addRow("image_hide.py","image_hide.py",0,2966,"2.9 kB",1736789411,"13/01/2025, 23:00:11");</script>
+<script>addRow("image_reveal.py","image_reveal.py",0,1400,"1.4 kB",1736789272,"13/01/2025, 22:57:52");</script>
