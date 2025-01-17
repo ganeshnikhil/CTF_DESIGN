@@ -1,20 +1,34 @@
 import argparse 
-def retrieve_key_from_image(image_path , key_length = -12):
-    # Open the modified image file in binary mode
-    with open(image_path, 'rb') as img_file:
-        img_data = img_file.read()
+def retrieve_key_from_image(image_path, key_format):
+    """
+    Retrieves the CTF key in the specified format (e.g., CSCTF{}) hidden in the binary data of an image.
 
-    # Assuming the key is appended at the end, find the key's length and extract the key
-    # For example, let's assume the key has a fixed length of 12 bytes (adjust as needed)
-    key_length = 12  # You must know the length of the key or how to identify it
-    
-    # Extract the key (last N bytes)
-    key_binary = img_data[-key_length:]
-    
-    # Convert the binary data back to a string (utf-8 decoding)
-    key = key_binary.decode('utf-8')
+    Args:
+        image_path (str): The path to the image file.
+        key_format (str): The format of the key to search for (e.g., 'CSCTF').
 
-    return key
+    Returns:
+        str: The found CTF key, or a message indicating no key was found.
+    """
+    try:
+        # Open the image file in binary read mode
+        with open(image_path, 'rb') as img_file:
+            img_data = img_file.read()
+        
+        # Decode the binary data into a string for regex search
+        # Use errors='ignore' to skip non-text binary content
+        img_text = img_data.decode('utf-8', errors='ignore')
+
+        # Search for the CTF key using regex
+        match = re.search(fr'{re.escape(key_format)}\{{.*?\}}', img_text)
+
+        if match:
+            return match.group(0)  # Return the found key
+        else:
+            return "No CTF key found in the image binary data."
+    except Exception as e:
+        return f"An error occurred: {e}"
+
 
 if __name__ == "__main__":
     # Parse command-line arguments
